@@ -46,10 +46,10 @@ namespace AdventOfCode
         }
       }
 
-      var sleepiestGuard = guardSleepCount.MaxBy(o => o.Value).Key;
+      var sleepiestGuard = guardSleepCount.MaxBy(o => o.Value).First().Key;
       Console.WriteLine("Sleepiest Guard: " + sleepiestGuard);
 
-      var minute = guardSleep[sleepiestGuard].MaxBy(o => o.Value).Key;
+      var minute = guardSleep[sleepiestGuard].MaxBy(o => o.Value).First().Key;
       Console.WriteLine("Most Frequent Minute: " + minute);
 
       var result = sleepiestGuard * minute;
@@ -95,11 +95,11 @@ namespace AdventOfCode
       var mostMinute = new Dictionary<int, Tuple<int, int>>();
       foreach (var key in guardSleep.Keys)
       {
-        var minute = guardSleep[key].MaxBy(o => o.Value);
+        var minute = guardSleep[key].MaxBy(o => o.Value).First();
         mostMinute.Add(key, new Tuple<int, int>(minute.Key, minute.Value));
       }
 
-      var most = mostMinute.MaxBy(o => o.Value.Item2);
+      var most = mostMinute.MaxBy(o => o.Value.Item2).First();
       
 
       var result = most.Key * most.Value.Item1;

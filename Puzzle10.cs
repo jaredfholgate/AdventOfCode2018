@@ -110,16 +110,14 @@ namespace AdventOfCode
         {
           if (resultArray.ContainsKey(x) && resultArray[x].ContainsKey(y))
           {
-            File.AppendAllText(FilePath, "#");
             output.Append(resultArray[x][y] ? "#" : ".");
           }
           else
           {
-            File.AppendAllText(FilePath, ".");
             output.Append(".");
           }
         }
-        File.AppendAllText(FilePath, Environment.NewLine);
+        
         output.Append(Environment.NewLine);
       }
       Console.WriteLine(output.ToString());

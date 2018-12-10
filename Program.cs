@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace AdventOfCode
 {
-  class Program
-  {
-    static void Main(string[] args)
+    class Program
     {
-      Puzzle10.Run1();
-      Console.Read();
+        static void Main(string[] args)
+        {
+            Puzzle10.Run1();
+        }
     }
-  }
 }
