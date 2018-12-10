@@ -102,9 +102,9 @@ namespace AdventOfCode
       }
       
       var output = new StringBuilder();
-      for (var x = minX; x <= maxX; x++)
+      for (var y = minY; y <= maxY; y++)
       {
-        for (var y = minY; y <= maxY; y++)
+        for (var x = minX; x <= maxX; x++)
         {
           if (resultArray.ContainsKey(x) && resultArray[x].ContainsKey(y))
           {
