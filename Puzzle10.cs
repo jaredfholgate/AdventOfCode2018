@@ -10,8 +10,6 @@ namespace AdventOfCode
 {
   public class Puzzle10
   {
-    private const string FilePath = @"c:\test\Puzzle10.txt";
-
     private class Point
     {
       public int StartX { get; set; }
