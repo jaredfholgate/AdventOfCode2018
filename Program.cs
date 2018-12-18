@@ -6,7 +6,8 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Puzzle10.Run1();
+            Puzzle11.Run2();
+            Console.Read();
         }
     }
 }
