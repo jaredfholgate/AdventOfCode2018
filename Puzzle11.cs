@@ -18,16 +18,6 @@ namespace AdventOfCode
             public int TotalPower { get; set; }
         }
 
-        public static void Test()
-        {
-            var grid = BuildGrid(57);
-            Console.WriteLine(grid[122][79].Power);
-            grid = BuildGrid(39);
-            Console.WriteLine(grid[217][196].Power);
-            grid = BuildGrid(71);
-            Console.WriteLine(grid[101][153].Power);
-        }
-
         public static void Run1()
         {
             var grid = BuildGrid(Serial);
